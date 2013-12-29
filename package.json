@@ -1,0 +1,28 @@
+{
+  "name": "pdp",
+  "version": "0.1.0",
+  "description": "Node.js parser of PHP var dumps",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/watson/pdp.git"
+  },
+  "keywords": [
+    "php",
+    "dump",
+    "parser",
+    "parse",
+    "print_r",
+    "var_dump",
+    "var_export"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/pdp/issues"
+  },
+  "homepage": "https://github.com/watson/pdp"
+}
