@@ -49,7 +49,7 @@ a nice JavaScript object literal or Array:
 ```javascript
 var pdp = require('pdp');
 var dump = '...'; // let's imagine we have the entire Array(...) dump here
-consonle.log(pdp(dump)); // prints: { a: 'apple', b: 'banana', c: [ 'x', 'y', 'z' ] }
+console.log(pdp(dump)); // prints: { a: 'apple', b: 'banana', c: [ 'x', 'y', 'z' ] }
 ```
 
 ## License
