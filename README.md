@@ -8,7 +8,7 @@ status](https://secure.travis-ci.org/watson/pdp.png)](http://travis-ci.org/watso
 ## Install
 
 ```
-npm install mongohooks
+npm install pdp
 ```
 
 ## Usage (or what is a PHP dump?)
