@@ -34,7 +34,11 @@ Parser.prototype._parseArray = function () {
   while ((line = this._next()) !== ')') {
     if (!line) throw new Error('Unexpected end of Array');
     match = line.match(/^\[(\w*)\] =>(.*)$/);
-    if (!match) throw new Error('Could not parse Array element: ' + line);
+    if (!match) {
+      // simple multi-line support (too simple?)
+      result[key] += ' '+line;
+      continue;
+    }
     key = match[1];
     val = match[2].trim();
     if (val === 'Array') val = this._parseArray();
