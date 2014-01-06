@@ -33,10 +33,10 @@ Parser.prototype._parseArray = function () {
 
   while ((line = this._next()) !== ')') {
     if (!line) throw new Error('Unexpected end of Array');
-    match = line.match(/^\[(\w*)\] => (.*)$/);
+    match = line.match(/^\[(\w*)\] =>(.*)$/);
     if (!match) throw new Error('Could not parse Array element: ' + line);
     key = match[1];
-    val = match[2];
+    val = match[2].trim();
     if (val === 'Array') val = this._parseArray();
     if (key === '0') result = []; // numeric array detected
     result[key] = val;
