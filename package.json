@@ -1,6 +1,6 @@
 {
   "name": "pdp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Node.js parser of PHP var dumps",
   "main": "index.js",
   "scripts": {
